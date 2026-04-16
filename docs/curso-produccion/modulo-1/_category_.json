@@ -1,0 +1,9 @@
+{
+  "label": "Módulo 1 - Teoría Musical",
+  "position": 1,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "modulo-1/intro"
+  }
+}

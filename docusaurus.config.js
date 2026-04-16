@@ -45,13 +45,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -74,6 +68,42 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'dj',
+        path: 'docs/curso-dj',
+        routeBasePath: 'curso-dj',
+        sidebarPath: './sidebars-dj.js',
+        editUrl:
+          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'edicion',
+        path: 'docs/curso-edicion',
+        routeBasePath: 'curso-edicion',
+        sidebarPath: './sidebars-edicion.js',
+        editUrl:
+          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'produccion',
+        path: 'docs/curso-produccion',
+        routeBasePath: 'curso-produccion',
+        sidebarPath: './sidebars-produccion.js',
+        editUrl:
+          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -83,17 +113,32 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Miguel Rodrica',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
+            docId: 'intro',
+            docsPluginId: 'dj',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Curso DJ',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            docsPluginId: 'edicion',
+            position: 'left',
+            label: 'Curso Edición de Audio',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            docsPluginId: 'produccion',
+            position: 'left',
+            label: 'Curso Producción Musical',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -107,11 +152,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Cursos',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Curso DJ',
+                to: '/curso-dj/intro',
+              },
+              {
+                label: 'Curso Edición de Audio',
+                to: '/curso-edicion/intro',
+              },
+              {
+                label: 'Curso Producción Musical',
+                to: '/curso-produccion/intro',
               },
             ],
           },
