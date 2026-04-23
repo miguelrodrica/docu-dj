@@ -3,9 +3,26 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  background-color: black;
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: auto;
+}
+
+.features :global(.col p) {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featureCardLink {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.featureCardLink:hover {
+  text-decoration: none;
 }

@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'ACADEMY',
+  tagline: 'Bienvenido, acá encontrarás cursos que te ayudarán a mejorar en tu carrera como DJ y productor musical.',
+  favicon: 'img/speaker.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -113,10 +113,10 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Miguel Rodrica',
+        title: 'ACADEMY',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Logo',
+          src: 'img/speaker.svg',
         },
         items: [
           {
@@ -124,26 +124,26 @@ const config = {
             docId: 'intro',
             docsPluginId: 'dj',
             position: 'left',
-            label: 'Curso DJ',
+            label: 'DJ',
           },
           {
             type: 'doc',
             docId: 'intro',
             docsPluginId: 'edicion',
             position: 'left',
-            label: 'Curso Edición de Audio',
+            label: 'Edición de Audio',
           },
           {
             type: 'doc',
             docId: 'intro',
             docsPluginId: 'produccion',
             position: 'left',
-            label: 'Curso Producción Musical',
+            label: 'Producción Musical',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Sobre Mí', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://www.youtube.com/@miguelrodrica',
+            label: 'YouTube',
             position: 'right',
           },
         ],
@@ -155,51 +155,51 @@ const config = {
             title: 'Cursos',
             items: [
               {
-                label: 'Curso DJ',
+                label: 'DJ',
                 to: '/curso-dj/intro',
               },
               {
-                label: 'Curso Edición de Audio',
+                label: 'Edición de Audio',
                 to: '/curso-edicion/intro',
               },
               {
-                label: 'Curso Producción Musical',
+                label: 'Producción Musical',
                 to: '/curso-produccion/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Redes Sociales',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@miguelrodrica',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/miguelrodrica',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'TikTok',
+                href: 'https://www.tiktok.com/@miguelrodrica',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Mi Música',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Spotify',
+                href: 'https://open.spotify.com/artist/3hs8nTmDTuEdiR3csOfR3m?si=Ro8W4zfzR22T5we2ScslXg',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'SoundCloud',
+                href: 'https://soundcloud.com/miguelrodrica',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ACADEMY, Miguel Rodrica.`,
       },
       prism: {
         theme: prismThemes.github,

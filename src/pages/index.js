@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/curso-dj/intro">
-            Comienza con Curso DJ - 5min ⏱️
+            Comienza con Curso DJ
           </Link>
         </div>
       </div>
@@ -32,7 +32,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      // title={`Hello from ${siteConfig.title}`}
+      title={`Home | Miguel Academy`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

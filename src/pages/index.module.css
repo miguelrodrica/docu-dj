@@ -4,10 +4,29 @@
  */
 
 .heroBanner {
+  min-height: 50vh; /* ajusta: 60vh, 70vh, 80vh, 100vh */
+  display: flex;
+  align-items: center;   /* centra verticalmente el contenido */
+  justify-content: center;
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.60)),
+    url('/img/hero.jpg') center / cover no-repeat;
+}
+
+.heroBanner :global(.hero__title) {
+  color: #ffffff;
+}
+
+.heroBanner :global(.hero__subtitle) {
+  color: #e5e7eb;
+  max-width: 800px; /* hazlo más estrecho */
+  margin: 0.75rem auto 0; /* centrado horizontal */
+  line-height: 1.5;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 996px) {
