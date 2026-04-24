@@ -19,8 +19,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/curso-dj/intro">
-            Comienza con Curso DJ
+            to="/guia-dj/intro">
+            Comienza con Guía DJ
           </Link>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       // title={`Hello from ${siteConfig.title}`}
-      title={`Home | Miguel Academy`}
+      title={`Home`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

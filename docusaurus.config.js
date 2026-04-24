@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ACADEMY',
-  tagline: 'Bienvenido, acá encontrarás cursos que te ayudarán a mejorar en tu carrera como DJ y productor musical.',
+  title: 'ROAD TO DJ',
+  tagline: 'Bienvenido a la guía que te acompañará paso a paso en tu camino para ser DJ profesional.',
   favicon: 'img/speaker.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -75,8 +75,8 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'dj',
-        path: 'docs/curso-dj',
-        routeBasePath: 'curso-dj',
+        path: 'docs/guia-dj',
+        routeBasePath: 'guia-dj',
         sidebarPath: './sidebars-dj.js',
         editUrl:
           'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -86,8 +86,8 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'edicion',
-        path: 'docs/curso-edicion',
-        routeBasePath: 'curso-edicion',
+        path: 'docs/guia-edicion',
+        routeBasePath: 'guia-edicion',
         sidebarPath: './sidebars-edicion.js',
         editUrl:
           'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -97,8 +97,8 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'produccion',
-        path: 'docs/curso-produccion',
-        routeBasePath: 'curso-produccion',
+        path: 'docs/guia-produccion',
+        routeBasePath: 'guia-produccion',
         sidebarPath: './sidebars-produccion.js',
         editUrl:
           'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -115,7 +115,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'ACADEMY',
+        title: 'ROAD TO DJ',
         logo: {
           alt: 'Logo',
           src: 'img/speaker.svg',
@@ -154,19 +154,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Cursos',
+            title: 'Guías',
             items: [
               {
                 label: 'DJ',
-                to: '/curso-dj/intro',
+                to: '/guia-dj/intro',
               },
               {
                 label: 'Edición de Audio',
-                to: '/curso-edicion/intro',
+                to: '/guia-edicion/intro',
               },
               {
                 label: 'Producción Musical',
-                to: '/curso-produccion/intro',
+                to: '/guia-produccion/intro',
               },
             ],
           },
@@ -201,7 +201,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ACADEMY, Miguel Rodrica.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ROAD TO DJ, Miguel Rodrica.`, 
       },
       prism: {
         theme: prismThemes.github,

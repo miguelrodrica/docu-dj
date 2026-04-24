@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'DJ',
-    to: '/curso-dj/intro',
+    to: '/guia-dj/intro',
     Svg: require('@site/static/img/dj.svg').default,
     description: (
       <>
@@ -17,7 +17,7 @@ const FeatureList = [
   },
   {
     title: 'Edición de Audio',
-    to: '/curso-edicion/intro',
+    to: '/guia-edicion/intro',
     Svg: require('@site/static/img/edit.svg').default,
     description: (
       <>
@@ -28,7 +28,7 @@ const FeatureList = [
   },
   {
     title: 'Producción Musical',
-    to: '/curso-produccion/intro',
+    to: '/guia-produccion/intro',
     Svg: require('@site/static/img/production.svg').default,
     description: (
       <>
